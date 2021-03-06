@@ -3,6 +3,14 @@ import os
 from datetime import datetime as dt
 import ivan
 import mann
+import firebase_admin
+from firebase_admin import credentials
+
+cred = credentials.Certificate("C:\Users\mgmma\PycharmProjects\\fitbit-project\\fitbit-e9ff9-firebase-adminsdk-8tpip"
+                               "-33e4313c1f.json")
+firebase_admin.initialize_app(cred)
+
+default_app = firebase_admin.initialize_app()
 
 date = "2021-02-14"
 access_token = os.environ.get("access_token")
