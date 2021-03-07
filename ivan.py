@@ -8,3 +8,9 @@ def date_and_time():
     date_time = now.strftime("%Y-%m-%d")
     return date_time
 
+
+
+def time():
+    now = dt.now()
+    time = now.strftime("%H:%M")
+    return time
